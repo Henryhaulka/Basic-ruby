@@ -1,112 +1,112 @@
 # # loop_example.rb
 
-# loop do
-#   puts "This will keep printing until you hit Ctrl + c"
-#   break #stops the loop,if not used, the prog will continue and may crash you pc
-# end
+loop do
+  puts "This will keep printing until you hit Ctrl + c"
+  break #stops the loop,if not used, the prog will continue and may crash you pc
+end
 
-# a = [100, 1, 50, 21,200, 10, 2, 0.5, 1.1, -1]
-# def sort(arr)
-#     x = arr.length
-#     loop do
-#         change = false
-#         (x-1).times do# x-1 to eliminate the 0 index i.e we have 10 elements and 10 positions/places but when sort starts 2 nos places will be taken to b one place hence the total element space will be 1 short
-#             |i = 0|# from index 0 |i|positive or negative
-#             if
-#                 arr [i] > arr[i + 1]
-#                 arr[i], arr[i + 1] = arr[i + 1],  arr[i]
-#                 change = true
-#             end
-#         end
-#         break if change == false # or write "if not change"/"!change" (if arr[i] !> arr[i + 1])
+a = [100, 1, 50, 21,200, 10, 2, 0.5, 1.1, -1]
+def sort(arr)
+    x = arr.length
+    loop do
+        change = false
+        (x-1).times do# x-1 to eliminate the 0 index i.e we have 10 elements and 10 positions/places but when sort starts 2 nos places will be taken to b one place hence the total element space will be 1 short
+            |i = 0|# from index 0 |i|positive or negative
+            if
+                arr [i] > arr[i + 1]
+                arr[i], arr[i + 1] = arr[i + 1],  arr[i]
+                change = true
+            end
+        end
+        break if change == false # or write "if not change"/"!change" (if arr[i] !> arr[i + 1])
 
-#     end
-#     arr
-# end
-# p sort(a)
+    end
+    arr
+end
+p sort(a)
 
-# # conditional_loop.rb
+# conditional_loop.rb
 
-# i = 0
-# loop do
-#   i += 2
-#   puts i
-#   if i == 10
-#     break       # this will cause execution to exit the loop
-#   end
-# end
+i = 0
+loop do
+  i += 2
+  puts i
+  if i == 10
+    break       # this will cause execution to exit the loop
+  end
+end
  
-# #using the next keykword
-# # next_loop.rb
+#using the next keykword
+# next_loop.rb
 
-# i = 0
-# loop do
-#   i += 2
-#   if i == 4
-#     next        # skip rest of the code in this iteration
-#   end
-#   puts i
-#   if i == 10
-#     break
-#   end
-# end
-# # while loop
-# puts "Enter a positive number"
-# num = gets.chomp.to_i
-#  while num >= 0 # takes a condition equal to boolean true
-#    puts num
-#     num -= 1
-#  end
-#  puts "done!"
+i = 0
+loop do
+  i += 2
+  if i == 4
+    next        # skip rest of the code in this iteration
+  end
+  puts i
+  if i == 10
+    break
+  end
+end
+# while loop
+puts "Enter a positive number"
+num = gets.chomp.to_i
+ while num >= 0 # takes a condition equal to boolean true
+   puts num
+    num -= 1
+ end
+ puts "done!"
 
-#  # until loop is the opposite of while/conditions that takes false condition
-# puts "Enter a number"
-# x = gets.chomp.to_i
-#  until x < 0
-#     puts x
-#     x -= 1
-#  end
-#     # perform_again.rb
+ # until loop is the opposite of while/conditions that takes false condition
+puts "Enter a number"
+x = gets.chomp.to_i
+ until x < 0
+    puts x
+    x -= 1
+ end
+    # perform_again.rb
 
-# loop do
-#   puts "Do you want to do that again?"
-#   answer = gets.chomp
-#   if answer != 'Y'
-#     break
-#   end
-# end
+loop do
+  puts "Do you want to do that again?"
+  answer = gets.chomp
+  if answer != 'Y'
+    break
+  end
+end
 
-# #for loop
-# # countdown4.rb
-# # countdown4.rb
+#for loop
+# countdown4.rb
+# countdown4.rb
 
-# x = [1, 2, 3, 4, 5]
+x = [1, 2, 3, 4, 5]
 
-# for i in x do
-#   puts i
-# end
+for i in x do
+  puts i
+end
 
-# puts "Done!"
+puts "Done!"
 
 
-# def day_name(day)
+def day_name(day)
      
-#     case day
-#     when "mon"
-#        puts  "monday"
-#         when "tue"
-#         puts "tuesday"
-#     when "wed"
-#         puts "wednesday"
-#     else
-#        puts "not mon - wed"
+    case day
+    when "mon"
+       puts  "monday"
+        when "tue"
+        puts "tuesday"
+    when "wed"
+        puts "wednesday"
+    else
+       puts "not mon - wed"
 
-#     end
+    end
     
 
-# end
+end
 
-# puts day_name("mon")
+puts day_name("mon")
 
 # #building a guessing game with while
 

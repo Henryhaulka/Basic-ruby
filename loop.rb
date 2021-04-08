@@ -108,6 +108,16 @@ end
 
 puts day_name("mon")
 
+#understanding unless
+problem = false
+print "Good to go!" unless problem# here problem == true,everytin in ruby is true except for nil and false or if a parameter is assigned the 2 values
+=begin
+It will do whatever you ask unless the condition is true. In our example,
+   problem is false,
+   so we don’t have a problem. We print Good to go!
+
+=end
+
 # #building a guessing game with while
 
 

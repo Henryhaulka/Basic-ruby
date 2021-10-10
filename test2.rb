@@ -126,20 +126,19 @@ end
  out_of_guess = false
  puts "Who designs a machine?"
  input_word = gets.chomp.to_s
+ #targeting the failure case method
  while secret_word != input_word and !out_of_guess
   if guess_count <= guess_limit
   puts "Who designs a machine?"
   input_word = gets.chomp.to_s
   guess_count += 1
   else
-    out_of_guess = true
+    out_of_guess 
   end
-  
- 
  end
  if out_of_guess
     puts "You lose"
     else
       puts "You won!"
   end
-   puts "You won!"
+ 

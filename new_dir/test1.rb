@@ -3,7 +3,7 @@ number = gets.chomp.to_i
  if number < 0
    p "This is a negative number"
     elsif number <= 50
-      p  "This number is betw 1 and 51"
+      p  "This number is betw 0 and 51"
     elsif (number >= 51)  && (number <= 100) 
    p  "This number is betw 51 and 100"
     else

@@ -63,7 +63,7 @@ def bubble_sort_by(arr)
     end
       arr  
 end
-p bubble_sort_by(['henryhaulka','hi','hello']){ |left, right| left.size - right.size}
+p bubble_sort_by(['henryhaulka','hi','hello','a']){ |left, right| left.size - right.size}
 
 def bubble_sort(arr)
     n = arr.size
@@ -84,18 +84,16 @@ p bubble_sort([100, 50, -2, -0.5,  0.5])
 def bubble_sort(arr)
     n = arr.size
     swapped = false
-    until swapped #while loop accepts a true boelean
-        swapped = true
         (n -1).times  do |i|
             if arr[i] > arr[i + 1]
                 arr[i], arr[i + 1] = arr[i + 1], arr[i]
-                swapped = false
+                swapped = true
             end
        end
-    end
+    
         arr #returner
 end
-p bubble_sort([100, 50, -2, -0.5,  0.5])
+p bubble_sort([100, 50, -2, -0.5,  0.5,9])
 
 def bubble_sort(arr)
     n = arr.size
